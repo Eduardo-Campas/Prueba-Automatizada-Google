@@ -25,3 +25,6 @@ steps:
     echo Starting the build
     mvn clean install
   displayName: 'Build with Maven'
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'build.sh'
