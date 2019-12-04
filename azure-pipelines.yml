@@ -23,5 +23,5 @@ steps:
 
 - script: |
     echo Starting the build
-    mvn package
+    mvn clean install
   displayName: 'Build with Maven'
