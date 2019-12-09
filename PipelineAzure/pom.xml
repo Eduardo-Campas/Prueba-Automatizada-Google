@@ -3,6 +3,10 @@
   <groupId>com.pipeline.azure</groupId>
   <artifactId>PipelineAzure</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<properties>
+    <java.version>X</java.version>
+    <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+</properties>
   <dependencies>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -10,6 +14,14 @@
     <version>3.141.59</version>
     <scope>test</scope>
 </dependency>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
